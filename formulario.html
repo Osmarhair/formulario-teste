@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    
+</head>
+<body>
+    <header>
+        <h1 id="tiulo">Cadastro de Profissionais DEV's</h1>
+        <p id="subtitulo">Preencha de acordo com sua ocupação</p>
+        <br>
+    </header>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+                
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label><strong>Qual sua área de atuação?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div>
+            <label for="senoridade"><strong>Senoridade</strong></label>
+            <select id="senoridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div>
+                <label><strong>Selecione as tecnogias que tem conhecimento</strong></label>
+                <br>
+                <input type="checkbox" id="tenologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <input type="checkbox" id="tenologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia1">CSS</label>
+                <input type="checkbox" id="tenologia3" name="tecnologia3" value="Javascript">
+                <label for="tecnologia1">Javascript</label>
+                <input type="checkbox" id="tenologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia1">PHP</label>
+                <input type="checkbox" id="tenologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia1">C#</label>
+                <input type="checkbox" id="tenologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia1">Pyton</label>
+                <input type="checkbox" id="tenologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia1">Java</label>
+                </div>
+        </fieldset>
+
+        <div>
+            <br>
+            <Label><strong>Conte um pouco mais sobre sua experiencia:</strong></Label>
+            <textarea name="experiencia" id="experiencia" cols="30" rows="6" style="width: 26em;"></textarea>
+        </div>
+        <button class="botao" type="submit">Concluir</button>
+    </form>
+
+
+
+</body>
+</html>
